@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPEED Rent-a-car</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <!--START SECTION ONE-->
+    <div class="header">
+      <div class="header_left" >
+        <img src="/images/Logo.png" alt="slika" class="logoImg" />
+        <p>SPEED Rent-a-car</p>
+      </div>
+      <div class="header_right">
+        <div class="burger-manu-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+      </div>
+    </div>
+    <!--END SECTION ONE -->
+    <!-- START SECTION TWO -->
+    <div class="sectionTwoHolder" id="unos">
+      <div >
+        <img src="images/slogan.png" alt="slogan" class="slogan">
+      </div>
+      <div class="carAndText">
+        <div class="sectionTwoLeft">
+          <img src="/images/car.png" alt="car" class="audiCar" />
+        </div>
+        <div class="sectionTwoRight" >
+          <div class="sectionTwoRightElement">
+            <h3>Vrsta usluge</h3>
+            <select class="sectionTwoSelect">
+              <option value="">Iznajmljivanje auta</option>
+              <option value="">Prevoz na odredjenu lokaciju</option>
+            </select>
+            <h3>Datum</h3>
+            <input placeholder="DD/MM/YYYY" class="inputTagDown" />
+            <button>DALJE ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SECTION TWO -->
+    <!-- START SECTION THREE  -->
+    <div class="sectionThreeWrapper">
+      <div class="sectionThreeHolder" id="ponuda">
+        <div class="sectionThreeCard">
+          <div class="sectionRThreeCarsTittle">
+            <h2>VOLSWAGEN</h2>
+            <h3>PASSAT B7</h3>
+          </div>
+          <hr />
+          <div class="sectionThreeCarsPrice">
+            <div class="price">
+              <h3>CIJENA:</h3>
+              <h3 class="red">100 KM / dan</h3>
+            </div>
+            <div>
+              <button class="moreInformation infoCarOne">Više informacija</button>
+            </div>
+          </div>
+          <div class="threeCardTopRight threeCardTopRightOne">
+            <div class="carInformation">
+              <img
+                src="images/sjedalo.png"
+                alt="sjedalo"
+                class="threeCardRightLittleIcon"
+              />
+              <p>5 Seats</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/torba.png"
+                alt="torba"
+                class="threeCardRightLittleIcon"
+              />
+              <p>5 Baggs</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/auto-vrata.png"
+                alt="autoVrata"
+                class="threeCardRightLittleIcon"
+              />
+              <p>4 Doors</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/pahulja.png"
+                alt="pahulja"
+                class="threeCardRightLittleIcon"
+              />
+              <p>A/C</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/mijenjac.png"
+                alt="mijenjac"
+                class="threeCardRightLittleIcon"
+              />
+              <p>Automatic</p>
+            </div>
+          </div>
+          <div class="img imgOne">
+            <img src="images/passat-b7.jpg" alt="passatB7" class="threeCardCar" onclick="showModal(`images/passat-b7.jpg`)"/>
+          </div>
+        </div>
+        <div class="sectionThreeCard">
+          <div class="sectionRThreeCarsTittle">
+            <h2>VOLSWAGEN</h2>
+            <h3>PASSAT B8</h3>
+          </div>
+          <hr />
+          <div class="sectionThreeCarsPrice">
+            <div class="price">
+              <h3>CIJENA:</h3>
+              <h3 class="red">150 KM / dan</h3>
+            </div>
+            <div>
+              <button class="moreInformation infoCarTwo">Više informacija</button>
+            </div>
+          </div>
+          <div class="threeCardTopRight threeCardTopRightTwo">
+            <div class="carInformation">
+              <img
+                src="images/sjedalo.png"
+                alt="sjedalo"
+                class="threeCardRightLittleIcon"
+              />
+              <p>5 Seats</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/torba.png"
+                alt="torba"
+                class="threeCardRightLittleIcon"
+              />
+              <p>4 Baggs</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/auto-vrata.png"
+                alt="autoVrata"
+                class="threeCardRightLittleIcon"
+              />
+              <p>4 Doors</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/pahulja.png"
+                alt="pahulja"
+                class="threeCardRightLittleIcon"
+              />
+              <p>A/C</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/mijenjac.png"
+                alt="mijenjac"
+                class="threeCardRightLittleIcon"
+              />
+              <p>Manuel</p>
+            </div>
+          </div>
+          <div class="img imgTwo">
+            <img src="images/passat-b8.jpg" alt="passatB8" class="threeCardCar" onclick="showModal(`images/passat-b8.jpg`)"/>
+          </div>
+        </div>
+        <div class="sectionThreeCard">
+          <div class="sectionRThreeCarsTittle">
+            <h2>VOLSWAGEN</h2>
+            <h3>ARTEON</h3>
+          </div>
+          <hr />
+          <div class="sectionThreeCarsPrice">
+            <div class="price">
+              <h3>CIJENA:</h3>
+              <h3 class="red">180 KM / dan</h3>
+            </div>
+            <div>
+              <button class="moreInformation infoCarThree">Više informacija</button>
+            </div>
+          </div>
+          <div class="threeCardTopRight threeCardTopRightThree">
+            <div class="carInformation">
+              <img
+                src="images/sjedalo.png"
+                alt="sjedalo"
+                class="threeCardRightLittleIcon"
+              />
+              <p>5 Seats</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/torba.png"
+                alt="torba"
+                class="threeCardRightLittleIcon"
+              />
+              <p>4 Baggs</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/auto-vrata.png"
+                alt="autoVrata"
+                class="threeCardRightLittleIcon"
+              />
+              <p>4 Doors</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/pahulja.png"
+                alt="pahulja"
+                class="threeCardRightLittleIcon"
+              />
+              <p>A/C</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/mijenjac.png"
+                alt="mijenjac"
+                class="threeCardRightLittleIcon"
+              />
+              <p>Automatic</p>
+            </div>
+          </div>
+          <div class="img imgThree">
+            <img src="images/vw-arteon.jpg" alt="ARTEON" class="threeCardCar" onclick="showModal(`images/vw-arteon.jpg`)"/>
+          </div>
+        </div>
+        <div class="sectionThreeCard lastThree">
+          <div class="sectionRThreeCarsTittle">
+            <h2>OPEL</h2>
+            <h3>ASTRA K</h3>
+          </div>
+          <hr />
+          <div class="sectionThreeCarsPrice">
+            <div class="price">
+              <h3>CIJENA:</h3>
+              <h3 class="red">70 KM / dan</h3>
+            </div>
+            <div>
+              <button class="moreInformation infoCarFour">Više informacija</button>
+            </div>
+          </div>
+          <div class="threeCardTopRight threeCardTopRightFour">
+            <div class="carInformation">
+              <img
+                src="images/sjedalo.png"
+                alt="sjedalo"
+                class="threeCardRightLittleIcon"
+              />
+              <p>5 Seats</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/torba.png"
+                alt="torba"
+                class="threeCardRightLittleIcon"
+              />
+              <p>5 Baggs</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/auto-vrata.png"
+                alt="autoVrata"
+                class="threeCardRightLittleIcon"
+              />
+              <p>4 Doors</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/pahulja.png"
+                alt="pahulja"
+                class="threeCardRightLittleIcon"
+              />
+              <p>A/C</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/mijenjac.png"
+                alt="mijenjac"
+                class="threeCardRightLittleIcon"
+              />
+              <p>Manuel</p>
+            </div>
+          </div>
+          <div class="img imgFour">
+            <img src="images/astra_k.jpg" alt="ASTRA" class="threeCardCar" onclick="showModal(`images/astra_k.jpg`)"/>
+          </div>
+        </div>
+        <div class="sectionThreeCard lastThree">
+          <div class="sectionRThreeCarsTittle">
+            <h2>ŠKODA</h2>
+            <h3>OCTAVIA</h3>
+          </div>
+          <hr />
+          <div class="sectionThreeCarsPrice">
+            <div class="price">
+              <h3>CIJENA:</h3>
+              <h3 class="red">130 KM / dan</h3>
+            </div>
+            <div>
+              <button class="moreInformation infoCarFive">Više informacija</button>
+            </div>
+          </div>
+          <div class="threeCardTopRight threeCardTopRightFive">
+            <div class="carInformation">
+              <img
+                src="images/sjedalo.png"
+                alt="sjedalo"
+                class="threeCardRightLittleIcon"
+              />
+              <p>5 Seats</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/torba.png"
+                alt="torba"
+                class="threeCardRightLittleIcon"
+              />
+              <p>4 Baggs</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/auto-vrata.png"
+                alt="autoVrata"
+                class="threeCardRightLittleIcon"
+              />
+              <p>4 Doors</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/pahulja.png"
+                alt="pahulja"
+                class="threeCardRightLittleIcon"
+              />
+              <p>A/C</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/mijenjac.png"
+                alt="mijenjac"
+                class="threeCardRightLittleIcon"
+              />
+              <p>Automatic</p>
+            </div>
+          </div>
+          <div class="img imgFive">
+            <img src="images/skoda-octavia.jpg" alt="OCTAVIA" class="threeCardCar" onclick="showModal(`images/skoda-octavia.jpg`)"/>
+          </div>
+        </div>
+        <div class="sectionThreeCard lastThree">
+          <div class="sectionRThreeCarsTittle">
+            <h2>ŠKODA</h2>
+            <h3>RAPID</h3>
+          </div>
+          <hr />
+          <div class="sectionThreeCarsPrice">
+            <div class="price">
+              <h3>CIJENA:</h3>
+              <h3 class="red">80 KM / dan</h3>
+            </div>
+            <div>
+              <button class="moreInformation infoCarSix">Više informacija</button>
+            </div>
+          </div>
+          <div class="threeCardTopRight threeCardTopRightSix">
+            <div class="carInformation">
+              <img
+                src="images/sjedalo.png"
+                alt="sjedalo"
+                class="threeCardRightLittleIcon"
+              />
+              <p>5 Seats</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/torba.png"
+                alt="torba"
+                class="threeCardRightLittleIcon"
+              />
+              <p>4 Baggs</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/auto-vrata.png"
+                alt="autoVrata"
+                class="threeCardRightLittleIcon"
+              />
+              <p>4 Doors</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/pahulja.png"
+                alt="pahulja"
+                class="threeCardRightLittleIcon"
+              />
+              <p>A/C</p>
+            </div>
+            <div class="carInformation">
+              <img
+                src="images/mijenjac.png"
+                alt="mijenjac"
+                class="threeCardRightLittleIcon"
+              />
+              <p>Manuel</p>
+            </div>
+          </div>
+          <div class="img imgSix">
+            <img src="images/Skoda_Rapid.jpg" alt="RAPID" class="threeCardCar" onclick="showModal(`images/Skoda_Rapid.jpg`)"/>
+          </div>
+        </div>
+    </div>
+  </div>
+
+      <!-- END SECTION THREE -->
+
+      <!-- START SECTION FOUR -->
+
+      <div class="sectionFourHolder" id="kvalitet">
+        <div class="sectionFourWrapper" >
+          <h2 class="sectionFourTitle">
+            KVALITET I POUZDANOST <span>SPEED</span> rent-a-cara
+          </h2>
+          <div class="sectionFoutText">
+            <div class="secFourCard">
+              <img class="promotionImg" src="images/Lajk.png" alt="like" />
+              <div>
+                <h4>Zadovoljstvo Naših korisnika</h4>
+                <p>
+                  Kvalitet, pouzdanost i povjerenje naših klijenata je prvi i
+                  osnovni cilj našeg poslovanja. Uvjerite se i sami da mi zaista
+                  uvijek stojimo iza svojih riječi
+                </p>
+              </div>
+            </div>
+            <div class="secFourCard">
+              <img class="promotionImg" src="images/medal.png" alt="medal" />
+              <div>
+                <h4>Nova i Kvalitetna vozila</h4>
+                <p>
+                  Sva vozila u našoj floti su potpuno nova sa najkvalitetnijim
+                  paketima opreme.Pouzdanost i kvalitet je ono što nudimo našim
+                  cijenjenim klijentima.
+                </p>
+              </div>
+            </div>
+            <div class="secFourCard">
+              <img
+                class="promotionImg"
+                src="images/nagigation.png"
+                alt="navogation"
+              />
+              <div>
+                <h4>Navigacija u svakom vozilu</h4>
+                <p>
+                  U većini naših vozila, navigacioni sistem je standardna oprema
+                  vozila. Osim toga, navigacioni sistem je moguće iznajmiti kao
+                  dodatni paket opreme.
+                </p>
+              </div>
+            </div>
+            <div class="secFourCard">
+              <img
+                class="promotionImg"
+                src="images/children's strollers.png"
+                alt="sjedalica"
+              />
+              <div>
+                <h4>Dječije i Booster sjedalice</h4>
+                <p>
+                  Shodno zakonu o saobraćaju u našoj zemlji, za klijente sa
+                  maloljetnom djecom smo omogućili i pakete dodatne opreme, koji
+                  podrazumijevaju diječije i booster sjedalice.
+                </p>
+              </div>
+            </div>
+            <div class="secFourCard">
+              <img
+                class="promotionImg"
+                src="images/mijenjac2.png"
+                alt="mijenjac"
+              />
+              <div>
+                <h4>AM/MT Transmisija</h4>
+                <p>
+                  Naša agencija se potrudila da ispuni sve zahtjeve naših
+                  klijenata, tako da u ponudi imamo vozila sa manuelnom
+                  transmisijom kao i vozila sa automatskom transmisijom.
+                </p>
+              </div>
+            </div>
+            <div class="secFourCard">
+              <img
+                class="promotionImg"
+                src="images/24_hours.png"
+                alt="24hours"
+              />
+              <div>
+                <h4>24 Sata podrška</h4>
+                <p>
+                  SPEED rent a car službe Vam stoje na raspolaganju 24 časa
+                  dnevno za slučaj bilo kakve nepredviđene situacije. Kontakt na
+                  brojeve telefona nalaze se na našoj web stranici.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END SESCTION FOUR -->
+
+      <!-- START SECTION FIVE -->
+
+      <div class="sectionFiveHolder" id="test">
+        <div class="icon">
+          <img src="images/Logo.png" alt="logo" class="logoImgFooter" />
+          <a
+            href="https://www.google.com/maps/place/Vo%C5%BEdova%C4%8Dka+24,+Banja+Luka+78000/@44.7849274,17.1964559,17z/data=!3m1!4b1!4m5!3m4!1s0x475e03a9fa73d621:0x671ac149870c77ce!8m2!3d44.7849236!4d17.1990308?entry=ttu"
+            target="_blank"
+            ><img src="images/adresa.png" alt="adresa" class="adress" id="lokacija"
+          /></a>
+        </div>
+        <div class="sectionFiveWrapper">
+          <div class="secFiveTwo" id="kontakt">
+            <h2>KONTAKT PODACI:</h2>
+            <p>TELEFON: 065/875-041</p>
+            <hr />
+            <p>ADRESA:</p>
+            <p>Voždovačka 24</p>
+            <p>78000 Banja Luka</p>
+          </div>
+          <div class="secFiveThree" id="radno_vrijeme">
+            <h2>RADNO VRIJEME</h2>
+            <p>PONEDJELJAK: <span>08:00 - 21:00h</span></p>
+            <p>UTORAK: <span>08:00 - 21:00h</span></p>
+            <p>SRIJEDA: <span>08:00 - 21:00h</span></p>
+            <p>ČETVRTAK: <span>08:00 - 21:00h</span></p>
+            <p>PETAK: <span>08:00 - 21:00h</span></p>
+            <p>SUBOTA: <span>08:00 - 16:00h</span></p>
+            <p>NEDJELJA: <span>08:00 - 14:00h</span></p>
+          </div>
+          <div>
+            <h2>DRUŠTVENE MREŽE</h2>
+            <div>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img
+                  src="images/facebook.png"
+                  alt="facebook"
+                  class="secFiveLogo"
+              /></a>
+              <a href="https://outlook.live.com/mail/0/" target="_blank"
+                ><img src="images/google.png" alt="google" class="secFiveLogo"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  src="images/instagram.png"
+                  alt="instagram"
+                  class="secFiveLogo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" onclick="closeModal()">
+      <img src="images/passat-b7.jpg" alt=""  >
+    </div>
+    <div class="burger_meni ">
+      <div class="unvisible">
+      <ul class="ul_list">
+        <li><a href="#unos">UNOS PODATAKA</a></li>
+        <li><a href="#ponuda">PONUDA</a></li>
+        <li><a href="#kontakt">KONTAKT</a></li>
+        <li><a href="#radno_vrijeme">RADNO VRIJEME</a></li>
+        <li><a href="#lokacija">LOKACIJA</a></li>
+        <li><a href="#kvalitet">NAŠ KVALITET</a></li>
+        <div class="littleIcon">
+          <a href="https://www.facebook.com/" target="_blank"
+                ><img
+                  src="images/facebook.png"
+                  alt="facebook"
+                  class="secFiveLogo"
+              /></a>
+              <a href="https://outlook.live.com/mail/0/" target="_blank"
+                ><img src="images/google.png" alt="google" class="secFiveLogo"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  src="images/instagram.png"
+                  alt="instagram"
+                  class="secFiveLogo"
+              /></a>
+        </div>
+      </ul>
+    </div>
+    </div>
+  </body>
+</html>
+
